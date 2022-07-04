@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jhaka-naka</title>
     <!-- favicon -->
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/icons/film.png" type="image/x-icon">
     <!-- tailwindcss cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,12 +19,45 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        yellow: '#FECC02',
+                        black: '#131313',
+                        gray: '#4E4E4E',
                     }
                 }
             }
         }
     </script>
 </head>
+<header class="">
+    <!-- navbar -->
+    <nav class=" w-full absolute bg-white">
+        <div class="flex justify-between h-28 items-center w-10/12 mx-auto">
+            <div>
+                <h1 class="text-3xl">Jhaka Naka Production</h1>
+            </div>
+            <ul class="flex gap-x-8 text-lg">
+                <li><a href="#">About US </a></li>
+                <li><a href="#">our Movies</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+  
+    </nav>
+
+    <!-- banner section -->
+    <section class="h-screen bg-[url('./images/banner.jpg')] bg-cover">
+        <div class="pl-20 w-2/4 text-white flex items-center h-full">
+           <div class="">
+            <h3 class="text-xl ">Movie production studio</h3>
+            <h1 class="text-7xl ">Films MAde to <br> <span class="text-yellow">Perfection</span></h1>
+            <p class="mt-5 mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button class="btn py-3 px-6 border-2 hover:bg-yellow hover:text-black hover:border-transparent transition-all">Discover More</button>
+           </div>
+        </div>
+    </section>
+
+</header>
 
 <body>
 
